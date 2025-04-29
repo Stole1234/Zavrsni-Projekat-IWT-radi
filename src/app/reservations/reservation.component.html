@@ -1,0 +1,23 @@
+<div class="reservations">
+    <h2>Moje Rezervacije</h2>
+  
+    <!-- Prikazivanje svih rezervacija -->
+    <div *ngFor="let reservation of reservations" class="reservation-item">
+      <div>
+        <h3>{{ reservation.movieTitle }}</h3>
+        <p>{{ reservation.date }} - {{ reservation.time }}</p>
+        <p>Cena: {{ reservation.price }} RSD</p>
+        <button (click)="removeReservation(reservation.movieId)">Ukloni rezervaciju</button>
+
+      </div>
+    </div>
+  
+    <!-- Ako nema rezervacija -->
+    <div *ngIf="reservations.length === 0">
+      <p>Nemate nijednu rezervaciju.</p>
+    </div>
+  </div>
+  
+  <!-- Dugme za brisanje svih rezervacija -->
+  <button *ngIf="reservations.length > 0" (click)="clearAllReservations()">Obriši sve rezervacije</button>
+  

@@ -1,0 +1,31 @@
+nav {
+  background-color: #1d1b1b; 
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+li {
+  margin: 0 10px; 
+}
+
+.auth-links {
+  margin-left: auto; 
+}
+
+.auth-links li {
+  margin: 0 2px;
+}
+
+/* Boja trenutne kartice*/
+.active {
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,24 @@
+<div class="movie-detail-container" *ngIf="movie">
+  <h2>{{ movie.title }}</h2>
+  <img mat-card-image [src]="'http://localhost:3000/images/' + movie.imageUrl" alt="{{ movie.title }}" />
+  <p>{{ movie.description }}</p>
+
+  <button (click)="toggleAbout()">
+    {{ showAbout ? 'Sakrij O filmu' : 'Prikaži O filmu' }}
+  </button>
+
+  <div *ngIf="showAbout">
+    <h3>O filmu</h3>
+    <p>{{ movie.longDescription }}</p>
+  </div>
+
+  <h2>Projekcije:</h2>
+  <div class="projections-container">
+    <div class="projection-card" *ngFor="let projection of movie.projections">
+      <p><strong>Datum:</strong> {{ projection.date }}</p>
+      <p><strong>Vreme:</strong> {{ projection.time }}</p>
+      <p><strong>Cena:</strong> {{ projection.price }} RSD</p>
+      <button (click)="reserveProjection(projection)">Rezerviši</button>
+    </div>
+  </div>
+</div>

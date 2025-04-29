@@ -1,0 +1,21 @@
+
+<nav>
+  <ul>
+    
+
+    <li><a routerLink="/movies" routerLinkActive="active">Filmovi</a></li>
+    <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login" routerLinkActive="active">Uloguj se</a></li>
+    <li><a routerLink="/register" routerLinkActive="active">Kreiraj profil</a></li>
+   <li> <a routerLink="/reservations">Moje rezervacije</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">O nama</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
+    <li *ngIf="authService.isLoggedIn()">
+      <a href="#" (click)="logout()">Odjavi se</a>
+    </li>
+   
+  </ul> 
+  
+</nav>
+
+
+<router-outlet></router-outlet>

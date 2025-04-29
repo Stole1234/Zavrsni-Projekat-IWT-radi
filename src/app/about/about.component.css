@@ -1,0 +1,42 @@
+/* Fleksibilni kontejner*/
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+
+  /* Pozadina i boje teksta */
+  background-color: #131212; 
+  color: #fdfafa; 
+}
+
+/* naslov "O nama" */
+.about-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; 
+}
+
+/* paragraf */
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ffffff; 
+}
+
+/* Skidanje podrazumevanih stilova za listu */
+.about-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Stilizovanje stavki liste */
+.about-container li {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #fdfafa; 
+}

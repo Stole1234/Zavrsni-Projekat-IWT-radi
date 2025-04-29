@@ -1,0 +1,15 @@
+<app-search-bar (search)="searchMovies($event)"></app-search-bar>
+<div class="movie-list-container">
+  <mat-card *ngFor="let movie of filteredMovies" class="movie-card" (click)="viewDetails(movie.id)">
+    <img mat-card-image [src]="'http://localhost:3000/images/' + movie.imageUrl" alt="{{ movie.title }}">
+
+    <mat-card-header>
+      <mat-card-title>{{ movie.title }}</mat-card-title>
+      <mat-card-subtitle>{{ movie.genre }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ movie.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+ 

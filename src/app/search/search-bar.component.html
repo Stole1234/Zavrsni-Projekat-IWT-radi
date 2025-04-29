@@ -1,0 +1,29 @@
+<div class="search-bar">
+  <!-- Polje za pretragu po nazivu -->
+  <input
+    type="text"
+    [(ngModel)]="searchCriteria.title"
+    placeholder="Pretraži po nazivu..."
+    (keydown.enter)="onSearch()"
+  />
+
+  <!-- Padajući meni za žanr -->
+  <select [(ngModel)]="searchCriteria.genre" (change)="onSearch()">
+    <option value="">Svi žanrovi</option>
+    <option value="Komedija">Komedija</option>
+    <option value="Akcija">Akcija</option>
+    <option value="Drama">Drama</option>
+    <option value="Naučna fantastika">Naučna fantastika</option>
+    <option value="Horor">Horor</option>
+    <option value="Triler">Triler</option>
+  </select>
+
+  <!-- Padajući meni za datum izlaska -->
+  <select [(ngModel)]="searchCriteria.releaseYear" (change)="onSearch()">
+    <option value="">Svi datumi</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+  </select>
+</div>

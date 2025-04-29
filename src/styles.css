@@ -1,0 +1,111 @@
+
+/* tamna tema */
+body {
+  /* Tamna pozadina */
+  background-color: #121212;
+  /* Bela boja teksta */ 
+  color: #ffffff; 
+  /* Odabrani font */
+  font-family: Arial, sans-serif; 
+}
+
+/* Stilovi za linkove */
+a {
+  /* Svetla boja za linkove */
+  color: #bb86fc; 
+}
+
+a:hover {
+  /* Tamnija boja pri hover-u */
+  color: #3700b3; 
+}
+
+
+/* Stilovi za dugmad */
+button {
+   /* Tamna pozadina dugmeta */
+  background-color: #333;
+  /* Bela boja teksta */
+  color: white;
+  /* Uklonjena granica */
+  border: none; 
+  /*Unutrašnja margina */
+  padding: 10px 20px; 
+  /* Veličina fonta */
+  font-size: 16px;
+  /* Zaobljene ivice */
+  border-radius: 5px; 
+  /* Kursor za dugme */
+  cursor: pointer; 
+}
+
+button:hover {
+  /* Svetlija nijansa pri hover-u */
+  background-color: #555; 
+  /* Bela boja teksta */
+  color: white; 
+}
+
+/* Podesavanja za slike */
+.movie-detail-container img {
+
+  /* Maksimalna širina slike */
+  max-width: 100%; 
+  /* Automatska visina slike */
+  height: auto; 
+  /* Margina ispod slike */
+  margin-bottom: 20px; 
+}
+
+/* Stil za opis filma */
+.movie-detail-container p {
+
+ /* Margina iznad i ispod opisa */
+  margin: 20px 0;
+  /* Prostor između redova teksta */
+  line-height: 1.6; 
+}
+
+/*Podesavanja za nav-bar*/
+.navbar {
+
+    /*Podesavanje displeja*/
+  display: flex;
+  /* Razmak između naslova i pretrage */
+  justify-content: space-between; 
+  /* Centriranje sadržaja po vertikali */
+  align-items: center;
+  /* Unutrašnji razmak */ 
+  padding: 10px 20px; 
+  /* Tamna pozadina */
+  background-color: #1c1c1c; 
+  /* Bela boja teksta */
+  color: white; 
+}
+
+/*Podesavanje nav-linkova*/
+.nav-links {
+
+  /* Horizontalni raspored linkova */
+  display: flex; 
+}
+
+.nav-link {
+
+  /* Razmak između linkova */
+  margin: 0 15px; 
+  /* Boja linkova */
+  color: white; 
+  /* Ukloni podvlačenje */
+  text-decoration: none; 
+}
+
+.nav-link:hover {
+
+  /* Podvlačenje pri hover-u */
+  text-decoration: underline; 
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

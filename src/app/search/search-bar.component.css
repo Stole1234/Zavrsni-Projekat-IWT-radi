@@ -1,0 +1,44 @@
+/* Kontejner za pretragu */
+.search-bar {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  margin: 20px 0; 
+}
+
+/* Input polje za pretragu */
+.search-bar input {
+  padding: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  width: 200px; 
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Padajući meni */
+.search-bar select {
+  padding: 8px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  background-color: #fff; 
+  width: 150px; 
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+}
+
+/* Efekat pri prelasku miša */
+.search-bar input:hover,
+.search-bar select:hover {
+  border-color: #007bff; 
+}
+
+/* Fokus elemenata */
+.search-bar input:focus,
+.search-bar select:focus {
+  outline: none; 
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
